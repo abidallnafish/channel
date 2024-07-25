@@ -37,11 +37,11 @@
             user-select: none;
         }
 
-        @media (min-width: 768px) {
+        /* @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
-        }
+        } */
     </style>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -60,7 +60,7 @@
         </symbol>
     </svg>
 
-    <div class="container py-3">
+    <div class="container-fluid py-3">
         <header>
             <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
@@ -93,14 +93,29 @@
 
                 <div class="col">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img src="assets/ekattor-tv.jpg" onclick="changeChannel('ekattor')" width="100%" alt="">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img src="assets/dbcnews.jpg" onclick="changeChannel('dbcnews')" width="100%" alt="">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img src="assets/channel-24.jpg" onclick="changeChannel('channel_24')" width="100%" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/independenttv.jpg" onclick="changeChannel('independenttv')" width="100%" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/somoy-tv.jpg" onclick="changeChannel('SomoyTv')" width="100%" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/bangla-tv.jpg" onclick="changeChannel('bangla-tv')" width="100%" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/channeli.jpg" onclick="changeChannel('ChannelI')" width="100%" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/rtv.jpg" onclick="changeChannel('RTV')" width="100%" alt="">
                         </div>
 
                     </div>
@@ -115,7 +130,7 @@
 
     $(document).ready(function () {
         $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
-                            <iframe allowfullscreen style="width:100%; height:500px;"\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
                                 src="http://cdn.moviemazic.xyz:8083/EkattorTV/embed.html?token=91628be0afaa005563a7b320b892d9771d28dee9-94bc820f4b2990dd10df541d1f506efa-1721925881-1721915081&autoplay=true"></iframe>\
             </div>')
     });
@@ -125,22 +140,57 @@
 
         if (channel_name == 'ekattor') {
             $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
-                            <iframe allowfullscreen style="width:100%; height:500px;"\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
                                 src="http://cdn.moviemazic.xyz:8083/EkattorTV/embed.html?token=91628be0afaa005563a7b320b892d9771d28dee9-94bc820f4b2990dd10df541d1f506efa-1721925881-1721915081&autoplay=true"></iframe>\
             </div>')
         }
-        if (channel_name == 'dbcnews') {
+        else if (channel_name == 'dbcnews') {
             $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
-                            <iframe allowfullscreen style="width:100%; height:500px;"\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
                                 src="http://cdn.moviemazic.xyz:8083/DBCNews/embed.html?token=be24a114ff1a1cc0dd4dfe2aa62fddd57afce561-2328ece643b8d583887d17c62f46f972-1721928185-1721917385&autoplay=true"></iframe>\
             </div>')
         }
-        if (channel_name == 'channel_24') {
+        else if (channel_name == 'channel_24') {
             $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
-                            <iframe allowfullscreen style="width:100%; height:500px;"\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
                                 src="http://cdn.moviemazic.xyz:8083/channel24/embed.html?token=8ab45c7b3c2b3b0adf058f03cfa3edb96cdb8bf3-07d7b26519246fe0c25a1756b5143bf5-1721928297-1721917497&autoplay=true"></iframe>\
             </div>')
         }
+        else if (channel_name == 'independenttv') {
+            $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
+                                src="http://cdn.moviemazic.xyz:8083/IndependentTV/embed.html?token=7e7b2d9345238e2541784aa72f5350e036b8f5dc-d1684adb7d9b9cae91b69d7554e89b41-1721932189-1721921389&autoplay=true"></iframe>\
+            </div>')
+        }
+        else if (channel_name == 'SomoyTv') {
+            $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
+                                src="http://cdn.moviemazic.xyz:8083/SomoyTv/embed.html?token=e4d71e21dbb598815be264995cec796ba07c19c0-79de7234303d0b9a928cbacbf37fd500-1721932343-1721921543&autoplay=true"></iframe>\
+            </div>')
+        }
+        else if (channel_name == 'bangla-tv') {
+            $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
+                                src="http://cdn.moviemazic.xyz:8083/BanglaTV/embed.html?token=f6d45613a246092464d2ff7e98c4e73c9622d50d-9d33867595644afe0d1426d6b742434c-1721932721-1721921921&autoplay=true"></iframe>\
+            </div>')
+        }
+        else if (channel_name == 'ChannelI') {
+            $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
+                                src="http://cdn.moviemazic.xyz:8083/ChannelI/embed.html?token=c064c8ea4dbeb92f90a82fecbd5613495074ca13-22892d857732d252e02f5ebf41071ca3-1721932980-1721922180&autoplay=true"></iframe>\
+            </div>')
+        }
+        else if (channel_name == 'RTV') {
+            $('#dynamic').html('<div class="embed-responsive embed-responsive-16by9">\
+                            <iframe allowfullscreen style="width:100%; height:700px;"\
+                                src="http://cdn.moviemazic.xyz:8083/RTV/embed.html?token=68b0c42f51cc4147ac2d9732f521e63f74715fa2-cd3836dd41067a4407ebe029faedf06f-1721933111-1721922311&autoplay=true"></iframe>\
+            </div>')
+        }
+
+
+
+
+
     }
 
 
