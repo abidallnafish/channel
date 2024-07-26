@@ -1,3 +1,10 @@
 .movie-payer{
     height: 700px;
 }
+.col-md-3:hover{
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.active{
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
