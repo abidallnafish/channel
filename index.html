@@ -136,11 +136,11 @@
                             <img class="chennel-logo" src="assets/star-sports-1.jpg"
                                 onclick="changeChannel('star_sports_1')" width="100%" alt="">
                         </div>
-                        <div class="col-md-3 mt-3" id="star_sports_1">
+                        <div class="col-md-3 mt-3" id="gtv">
                             <img class="chennel-logo" src="assets/gazi-tv.jpg"
                                 onclick="changeChannel('gtv')" width="100%" alt="">
                         </div>
-                        <div class="col-md-3 mt-3" id="star_sports_1">
+                        <div class="col-md-3 mt-3" id="tsports">
                             <img class="chennel-logo" src="assets/tsports.jpg"
                                 onclick="changeChannel('tsports')" width="100%" alt="">
                         </div>
@@ -155,19 +155,21 @@
 </body>
 
  <script>
+
+    var ip = "172.16.72.72";
     const channels = {
-        ekattor: "http://cdn.moviemazic.xyz:8083/EkattorTV/embed.html?token=91628be0afaa005563a7b320b892d9771d28dee9-94bc820f4b2990dd10df541d1f506efa-1721925881-1721915081",
-        dbcnews: "http://cdn.moviemazic.xyz:8083/DBCNews/embed.html?token=be24a114ff1a1cc0dd4dfe2aa62fddd57afce561-2328ece643b8d583887d17c62f46f972-1721928185-1721917385",
-        channel_24: "http://cdn.moviemazic.xyz:8083/channel24/embed.html?token=8ab45c7b3c2b3b0adf058f03cfa3edb96cdb8bf3-07d7b26519246fe0c25a1756b5143bf5-1721928297-1721917497",
-        independenttv: "http://cdn.moviemazic.xyz:8083/IndependentTV/embed.html?token=7e7b2d9345238e2541784aa72f5350e036b8f5dc-d1684adb7d9b9cae91b69d7554e89b41-1721932189-1721921389",
-        SomoyTv: "http://cdn.moviemazic.xyz:8083/SomoyTv/embed.html?token=e4d71e21dbb598815be264995cec796ba07c19c0-79de7234303d0b9a928cbacbf37fd500-1721932343-1721921543",
-        bangla_tv: "http://cdn.moviemazic.xyz:8083/BanglaTV/embed.html?token=f6d45613a246092464d2ff7e98c4e73c9622d50d-9d33867595644afe0d1426d6b742434c-1721932721-1721921921",
-        ChannelI: "http://cdn.moviemazic.xyz:8083/ChannelI/embed.html?token=c064c8ea4dbeb92f90a82fecbd5613495074ca13-22892d857732d252e02f5ebf41071ca3-1721932980-1721922180",
-        RTV: "http://cdn.moviemazic.xyz:8083/RTV/embed.html?token=68b0c42f51cc4147ac2d9732f521e63f74715fa2-cd3836dd41067a4407ebe029faedf06f-1721933111-1721922311",
-        star_sports_1: "http://cdn.moviemazic.xyz:8083/StarSports1HD/embed.html?token=b71d21c70b2e2db900c8eec42c31c4e9a3c4339e-dbc075410def99313d96adad4fdf0d47-1721978364-1721967564",
-        ntv: "http://cdn.moviemazic.xyz:8083/NTV/embed.html?token=d82881869f11b2805fdb5f84ef2be498e5eda67b-50ba802be9e8f487e6d6f49e09a6a678-1721978582-1721967782",
-        gtv: "http://cdn.moviemazic.xyz:8083/live-5/embed.html?token=41f931095521edb278ec1b89a5dfc74f41b0a90a-949f8974ae4559d05b31248f4cd2871f-1722096704-1722085904&autoplay=true",
-        tsports: "http://cdn.moviemazic.xyz:8083/TSportsHD/embed.html?token=dd681df3e0a5c16d731751a0d53aef5ac7a26762-347625094cf297c56efaf66b73de4a30-1722096768-1722085968&autoplay=true"
+        ekattor: "http://"+ip+":8083/EkattorTV/embed.html?token=91628be0afaa005563a7b320b892d9771d28dee9-94bc820f4b2990dd10df541d1f506efa-1721925881-1721915081",
+        dbcnews: "http://" + ip +":8083/DBCNews/embed.html?token=be24a114ff1a1cc0dd4dfe2aa62fddd57afce561-2328ece643b8d583887d17c62f46f972-1721928185-1721917385",
+        channel_24: "http://"+ip+":8083/channel24/embed.html?token=8ab45c7b3c2b3b0adf058f03cfa3edb96cdb8bf3-07d7b26519246fe0c25a1756b5143bf5-1721928297-1721917497",
+        independenttv: "http://"+ip+":8083/IndependentTV/embed.html?token=7e7b2d9345238e2541784aa72f5350e036b8f5dc-d1684adb7d9b9cae91b69d7554e89b41-1721932189-1721921389",
+        SomoyTv: "http://"+ip+":8083/SomoyTv/embed.html?token=e4d71e21dbb598815be264995cec796ba07c19c0-79de7234303d0b9a928cbacbf37fd500-1721932343-1721921543",
+        bangla_tv: "http://"+ip+":8083/BanglaTV/embed.html?token=f6d45613a246092464d2ff7e98c4e73c9622d50d-9d33867595644afe0d1426d6b742434c-1721932721-1721921921",
+        ChannelI: "http://"+ip+":8083/ChannelI/embed.html?token=c064c8ea4dbeb92f90a82fecbd5613495074ca13-22892d857732d252e02f5ebf41071ca3-1721932980-1721922180",
+        RTV: "http://"+ip+":8083/RTV/embed.html?token=68b0c42f51cc4147ac2d9732f521e63f74715fa2-cd3836dd41067a4407ebe029faedf06f-1721933111-1721922311",
+        star_sports_1: "http://"+ip+":8083/StarSports1HD/embed.html?token=b71d21c70b2e2db900c8eec42c31c4e9a3c4339e-dbc075410def99313d96adad4fdf0d47-1721978364-1721967564",
+        ntv: "http://"+ip+":8083/NTV/embed.html?token=d82881869f11b2805fdb5f84ef2be498e5eda67b-50ba802be9e8f487e6d6f49e09a6a678-1721978582-1721967782",
+        gtv: "http://"+ip+":8083/live-5/embed.html?token=41f931095521edb278ec1b89a5dfc74f41b0a90a-949f8974ae4559d05b31248f4cd2871f-1722096704-1722085904&autoplay=true",
+        tsports: "http://"+ip+":8083/TSportsHD/embed.html?token=dd681df3e0a5c16d731751a0d53aef5ac7a26762-347625094cf297c56efaf66b73de4a30-1722096768-1722085968&autoplay=true"
     };
 
     $(document).ready(function () {
@@ -187,6 +189,8 @@
             alert('Channel not found');
         }
     }
+ 
+
 </script>
 
 
